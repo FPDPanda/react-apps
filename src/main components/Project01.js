@@ -7,6 +7,7 @@ import Recipe from '../project01/Recipe'
 import './Project01.css';
 
 // Images
+import leftRightArrow from '../project01/images/left-right-arrow.png'
 
 function Project01() {
 
@@ -59,6 +60,8 @@ function Project01() {
 
                 <div className="last"></div>
             </main>
+
+            <img src={leftRightArrow} id="scroll_guide" alt="horizontal scroll guide"></img>
         </div>
     );
 };
