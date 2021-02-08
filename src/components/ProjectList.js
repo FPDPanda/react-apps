@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import {Link, HashRouter as Router} from 'react-router-dom'
 
+// Components
+import ScrollTop from './ScrollTop'
+
 // CSS
 import './ProjectList.css'
 
@@ -45,6 +48,8 @@ function ProjectList() {
             //Annoying CSS bug with overflow-x more details on the link
             //https://alexandergottlieb.com/2018/02/22/overflow-scroll-and-the-right-padding-problem-a-css-only-solution
             }
+
+            <ScrollTop />
         </ul>
     )
 }
