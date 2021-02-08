@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 // Components
+import Recipe from '../project01/Recipe'
 
 // CSS
 import './Project01.css';
@@ -46,6 +47,18 @@ function Project01() {
                 </button>
             </form>
             
+            <main className="recipes_container">
+                {recipes.map(dish => (
+                    <Recipe
+                    key={dish.recipe.label}
+                    url={dish.recipe.url}
+                    image={dish.recipe.image}
+                    title={dish.recipe.label}
+                    calories={dish.recipe.calories}/>
+                ))}
+
+                <div className="last"></div>
+            </main>
         </div>
     );
 };

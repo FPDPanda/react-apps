@@ -50,3 +50,21 @@
   background-color: #fff;
 }
 
+.recipes_container {
+  margin-top: 50px;
+  background-color: #fff;
+  width: max(330px, 90%);
+
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.last {
+  padding: 1px;
+}
+
+#scroll_guide {
+  max-width: 95vw;
+}
