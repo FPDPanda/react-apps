@@ -37,7 +37,7 @@ function ProjectList() {
                         <p className="project-description">{project.description}</p>
 
                         <Router>
-                            <Link className="project-link" to={project.link}>Link to project</Link>
+                            <Link className="project-link" target="_blank" to={project.link}>Link to project</Link>
                         </Router>
                     </article>
                 </li>
